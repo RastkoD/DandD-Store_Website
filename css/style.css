@@ -5,7 +5,7 @@
   --mainYellow: rgb(249, 228, 148);
   --mainWhite: #fff;
   --mainBlack: #000;
-  --yellowTrans: rgba(249, 228, 148, 0.5);
+  --yellowTrans: rgba(249, 228, 148, 0.6);
   --mainGrey: rgb(238, 238, 238);
 }
 
@@ -79,7 +79,7 @@ body {
 .max-height {
   min-height: calc(100vh - 76px);
   background: linear-gradient(var(--yellowTrans), var(--yellowTrans)),
-    url(../img/headerBcg.jpg);
+    url(../img/headerBcg2.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -87,7 +87,7 @@ body {
   position: relative;
 }
 .banner {
-  color: var(--mainWhite);
+  color: var(--mainBlack);
   margin-top: -4rem;
 }
 
@@ -335,5 +335,12 @@ body {
 
   .store-item-icon:hover {
     cursor: pointer;
+  }
+
+  .banner-link {
+    font-size: 1.5rem;
+    color: var(--mainPink);
+    border: 0.2rem solid var(--mainBlack);
+    background: var(--mainBlack);
   }
 }

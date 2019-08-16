@@ -13,8 +13,8 @@ window.onscroll = function() {
 
 function scrollFunction() {
   if (
-    document.body.scrollTop > 650 ||
-    document.documentElement.scrollTop > 650
+    document.body.scrollTop > 800 ||
+    document.documentElement.scrollTop > 800
   ) {
     document.getElementById('myBtn').style.display = 'block';
   } else {
