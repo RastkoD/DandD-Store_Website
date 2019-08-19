@@ -30,6 +30,10 @@ body {
   background: var(--mainPink) !important;
 }
 
+.btn-pink:focus {
+  outline: none !important;
+}
+
 .btn-black {
   color: var(--mainBlack) !important;
   border-color: var(--mainBlack) !important;
@@ -38,6 +42,11 @@ body {
 .btn-black:hover {
   color: var(--mainPink) !important;
   background: var(--mainBlack) !important;
+}
+
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 /* nav links */
@@ -342,5 +351,53 @@ body {
     color: var(--mainPink);
     border: 0.2rem solid var(--mainBlack);
     background: var(--mainBlack);
+  }
+}
+
+/* filter */
+.filterDiv {
+  float: left;
+  display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+.new {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  width: 100%;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-image: linear-gradient(
+    to left,
+    rgb(211, 9, 9),
+    rgb(249, 228, 148),
+    #000
+  );
+  background-clip: text;
+  color: transparent;
+  background-size: 300%;
+  animation: bg-animation 3s infinite alternate;
+  padding: 0;
+  margin: 0;
+  font-size: 1.5rem;
+  word-spacing: 1.5rem;
+  border: 1px solid var(--mainGrey);
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+
+  100% {
+    background-position: right;
   }
 }

@@ -189,33 +189,33 @@
             class="col-lg-8 mx-auto d-flex justify-content-around sortBtn flex-wrap"
           >
             <a
-              href="#"
-              class="btn btn-black text-uppercase filter-btn m-2"
+              class="btn btn-black text-uppercase filter-btn m-2 active"
               data-filter="all"
+              onclick="filterSelection('all')"
               >all</a
             >
             <a
-              href="#"
               class="btn btn-black text-uppercase filter-btn m-2"
-              data-filter="all"
+              data-filter="dice"
+              onclick="filterSelection('dice')"
               >dice</a
             >
             <a
-              href="#"
               class="btn btn-black text-uppercase filter-btn m-2"
-              data-filter="all"
+              data-filter="mini"
+              onclick="filterSelection('mini')"
               >miniatures</a
             >
             <a
-              href="#"
               class="btn btn-black text-uppercase filter-btn m-2"
-              data-filter="all"
+              data-filter="book"
+              onclick="filterSelection('book')"
               >books</a
             >
             <a
-              href="#"
               class="btn btn-black text-uppercase filter-btn m-2"
-              data-filter="all"
+              data-filter="newItem"
+               onclick="filterSelection('newItem')"
               >new arrivals</a
             >
           </div>
@@ -234,7 +234,7 @@
                 <input
                   type="text"
                   class="form-control"
-                  placeholder="item..."
+                  placeholder="take 20!"
                   id="search-item"
                 />
               </div>
@@ -243,14 +243,16 @@
         </div>
         <!-- end of search box -->
         <!-- store items -->
-        <div class="row store items" id="store-items">
+        <div class="row store-items" id="store-items">
           <!-- single items -->
           <div
-            class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets"
-            data-item="sweets"
+            class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item dice newItem filterDiv"
+            data-item="dice"
           >
             <div class="card single-item">
+              
               <div class="img-container">
+                <h2 class="new">new new new</h2>
                 <img
                   src="/img/dice-1.jpg"
                   class="card-img-top store-img"
@@ -276,8 +278,8 @@
             </div>
           </div>
           <div
-            class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets"
-            data-item="sweets"
+            class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item dice filterDiv"
+            data-item="dice"
           >
             <div class="card single-item">
               <div class="img-container">
@@ -306,8 +308,8 @@
             </div>
           </div>
           <div
-            class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets"
-            data-item="sweets"
+            class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item dice filterDiv"
+            data-item="dice"
           >
             <div class="card single-item">
               <div class="img-container">
@@ -336,8 +338,8 @@
             </div>
           </div>
           <div
-            class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets"
-            data-item="sweets"
+            class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item mini filterDiv"
+            data-item="mini"
           >
             <div class="card single-item">
               <div class="img-container">
@@ -368,11 +370,12 @@
           <!-- end of single items -->
           <!-- two items -->
           <div
-            class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets"
-            data-item="sweets"
+            class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item book newItem filterDiv"
+            data-item="book"
           >
             <div class="card single-item">
               <div class="img-container">
+                <h2 class="new">new new new</h2>
                 <img
                   src="/img/book-1.jpg"
                   class="card-img-top store-img"
@@ -398,8 +401,8 @@
             </div>
           </div>
           <div
-            class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets"
-            data-item="sweets"
+            class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item book filterDiv"
+            data-item="book"
           >
             <div class="card single-item">
               <div class="img-container">
@@ -428,8 +431,8 @@
             </div>
           </div>
           <div
-            class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets"
-            data-item="sweets"
+            class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item dice filterDiv"
+            data-item="dice"
           >
             <div class="card single-item">
               <div class="img-container">
@@ -458,11 +461,12 @@
             </div>
           </div>
           <div
-            class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets"
-            data-item="sweets"
+            class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item mini newItem filterDiv"
+            data-item="mini"
           >
             <div class="card single-item">
               <div class="img-container">
+                <h2 class="new">new new new</h2>
                 <img
                   src="/img/mini-4.jpg"
                   class="card-img-top store-img"
@@ -490,8 +494,8 @@
           <!-- end of two items -->
           <!-- multiple items -->
           <div
-            class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets"
-            data-item="sweets"
+            class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item book filterDiv"
+            data-item="book"
           >
             <div class="card single-item">
               <div class="img-container">
@@ -520,8 +524,8 @@
             </div>
           </div>
           <div
-            class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets"
-            data-item="sweets"
+            class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item book filterDiv"
+            data-item="book"
           >
             <div class="card single-item">
               <div class="img-container">
@@ -550,8 +554,8 @@
             </div>
           </div>
           <div
-            class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets"
-            data-item="sweets"
+            class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item mini filterDiv"
+            data-item="mini"
           >
             <div class="card single-item">
               <div class="img-container">
@@ -580,8 +584,8 @@
             </div>
           </div>
           <div
-            class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets"
-            data-item="sweets"
+            class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item mini filterDiv"
+            data-item="mini"
           >
             <div class="card single-item">
               <div class="img-container">
@@ -646,7 +650,7 @@
     </section>
     <!-- end services -->
     <!-- order -->
-    <section id="adventure" class="cakes py-5">
+    <section id="adventure" class="order py-5">
       <div class="container">
         <div class="row">
           <div class="col-10 mx-auto col-sm-6 text-center">
@@ -654,7 +658,7 @@
           </div>
         </div>
         <div class="row">
-          <!-- single cake -->
+          <!-- DM -->
           <div class="col-11 mx-auto col-md-6 col-lg-4 my-4 text-capitalize text-center">
             <h3 class="py-3">DM mercenary</h3>
             <div class="text-muted">
@@ -664,11 +668,11 @@
               <p class="my-3">or by the book</p>
               <button type="button" class="btn btn-pink text-capitalize mb-3">hire</button>
               <p class="text-lowercase mb-4">starting at $5 (or pizza)</p>
-              <img src="/img/dm.png" class="img-fluid" alt="">
+              <img src="/img/dm.png" class="img-fluid" alt="D&D miniature">
             </div>
           </div>
-          <!-- end of single cake -->
-          <!-- single cake -->
+          <!-- end of DM -->
+          <!-- campaigns -->
           <div class="col-11 mx-auto col-md-6 col-lg-4 my-4 text-capitalize text-center">
             <h3 class="py-3">competitive campaigns</h3>
             <div class="text-muted">
@@ -678,11 +682,11 @@
               <p class="my-3">register in advance</p>
               <button type="button" class="btn btn-pink text-capitalize mb-3">sign up</button>
               <p class="text-lowercase mb-4">per party $20</p>
-              <img src="/img/competitive.png" class="img-fluid" alt="">
+              <img src="/img/competitive.png" class="img-fluid" alt="D&D miniature">
             </div>
           </div>
-          <!-- end of single cake -->
-          <!-- single cake -->
+          <!-- end of campaigns -->
+          <!-- battles -->
           <div class="col-11 mx-auto col-md-6 col-lg-4 my-4 text-capitalize text-center">
             <h3 class="py-3">grand battles</h3>
             <div class="text-muted">
@@ -692,14 +696,15 @@
               <p class="my-3">conquer</p>
               <button type="button" class="btn btn-pink text-capitalize mb-3">to arms</button>
               <p class="text-lowercase mb-4">per banner $5</p>
-              <img src="/img/grand.png" class="img-fluid" alt="">
+              <img src="/img/grand.png" class="img-fluid" alt="D&D miniature">
             </div>
           </div>
-          <!-- end of single -->
+          <!-- end of battles -->
         </div>
       </div>
     </section>
     <!-- end of order -->
+    <!-- footer -->
     <footer>
       <div class="container-fluid">
         <div class="row">
@@ -728,7 +733,7 @@
             <span class="mr-4 icon-black footer-icon">
               <i class="fas fa-map"></i>
             </span>
-            <span>123 street, san diego CA 9092</span>
+            <span>123 street, san diego, CA 9092</span>
           </p>
           <p class="d-flex flex-wrap">
             <span class="mr-4 icon-black footer-icon">
@@ -746,22 +751,25 @@
         </div>
       </div>
     </footer>
+    <!-- end of footer -->
+    <!-- copyright-area -->
     <div class="copyright-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="copyright text-center">
-                            <p>Copyright © 2019 · All Rights Reserved · <a href="#header"><span style="color: var(--mainPink)">The General Store</span></a>
-                                <br />
-                                <span style="font-size: 0.6rem">Code and design:
-                                <a style="color: inherit" href="#"
-                                >OGTech</a></span>
-                            </p>
-                        </div> <!-- copyright -->
-                    </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div> <!-- copyright-area -->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="copyright text-center">
+              <p>Copyright © 2019 · All Rights Reserved · <a href="#header"><span style="color: var(--mainPink)">The General Store</span></a>
+                <br />
+                <span style="font-size: 0.6rem">Code and design:
+                <a style="color: inherit" href="#"
+                >OGTech</a></span>
+              </p>
+            </div> 
+          </div>
+        </div> 
+      </div> 
+    </div> 
+        <!-- end of copyright-area -->
     <!-- jquery -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <!-- bootstrap js -->
