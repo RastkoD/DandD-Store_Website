@@ -6,6 +6,6 @@
  * [x] Responsive design
  * [x] CSS3 and JS animations and tricks (transition, transform, back to top btn, parallax...)
  * [x] Footer with links (social, email)
- * [] JS store Cart
+ * [x] JS store Cart
  * [x] Sort items
  * [] Sign In/Register form
