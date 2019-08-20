@@ -9,3 +9,4 @@
  * [x] JS store Cart
  * [x] Sort items
  * [] Sign In/Register form
+ * [] Animate.css + wow.js
