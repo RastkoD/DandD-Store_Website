@@ -728,7 +728,9 @@ body {
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
   background-image: linear-gradient(
-    to left,
+    to right,
+    rgb(249, 228, 148),
+    rgb(249, 228, 148),
     rgb(211, 9, 9),
     rgb(249, 228, 148),
     #000

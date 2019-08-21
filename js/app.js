@@ -69,7 +69,7 @@
         const total = document.querySelector('.cart-total-container');
 
         cart.insertBefore(cartItem, total);
-        alert('item added to the cart');
+        alert('added to cart');
         showTotals();
       }
     });
