@@ -710,10 +710,9 @@ body {
 /* filter */
 .filterDiv {
   float: left;
-  display: none; /* Hidden by default */
+  display: none;
 }
 
-/* The "show" class is added to the filtered elements */
 .show {
   display: block;
 }
