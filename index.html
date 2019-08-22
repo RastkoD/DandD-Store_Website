@@ -73,7 +73,7 @@
               <span class="info-icon mx-lg-3">
                 <i class="fas fa-phone"></i>
               </span>
-              <p class="mb-0">321/8857-22</p>
+              <p class="mb-0">068/234-55-0</p>
             </div>
             <!-- single info -->
             <div
@@ -84,7 +84,7 @@
                 <i class="fas fa-shopping-cart"></i>
               </span>
               <p class="mb-0 text-capitalize">
-                <span id="item-count">0</span> in cart
+                <span id="item-count">0</span> in backpack
                   $
                 <span class="item-total">                 
                 </span>
@@ -94,6 +94,93 @@
         </div>
       </nav>
       <!-- end of nav -->
+      <!-- item in cart modal -->
+      <div class="modal fade" id="overlay">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Added to backpack</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of item in cart modal -->
+      <!-- checkout modal -->
+      <div class="modal fade" id="signIn">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+               <div class="row">
+                <div class="col-75">
+                  <div class="container">
+                    <form action="/action_page.php">
+
+                      <div class="row">
+                        <div class="col-50">
+                          <h3>Billing Address</h3>
+                          <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                          <input type="text" id="fname" name="firstname" placeholder="Krusk the Barbarian">
+                          <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                          <input type="text" id="email" name="email" placeholder="greataxe@example.com">
+                          <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                          <input type="text" id="adr" name="address" placeholder="Orcish Hut 32">
+                          <label for="city"><i class="fa fa-institution"></i> Settlement</label>
+                          <input type="text" id="city" name="city" placeholder="Dushnikh Yal">
+
+                          <div class="row">
+                            <div class="col-50">
+                              <label for="state">State</label>
+                              <input type="text" id="state" name="state" placeholder="D&D">
+                            </div>
+                            <div class="col-50">
+                              <label for="zip">Zip</label>
+                              <input type="text" id="zip" name="zip" placeholder="10001">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-50">
+                          <h3>Payment</h3>
+                          <label for="fname">Accepted Methods</label>
+                          <div class="icon-container">
+                            <i class="fa fa-cc-visa" style="color:navy;"></i>
+                            <i class="fa fa-cc-paypal" style="color:blue;"></i>
+                            <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                            <i class="fab fa-bitcoin" style="color:rgb(14, 131, 177);"></i>
+                          </div>
+                          <label for="cname">Name on Card</label>
+                          <input type="text" id="cname" name="cardname" placeholder="Krusk Half-orc">
+                          <label for="ccnum">Credit card number</label>
+                          <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                          <label for="expmonth">Exp Month</label>
+                          <input type="text" id="expmonth" name="expmonth" placeholder="Kythorn">
+
+                          <div class="row">
+                            <div class="col-50">
+                              <label for="expyear">Exp Year</label>
+                              <input type="text" id="expyear" name="expyear" placeholder="2018">
+                            </div>
+                            <div class="col-50">
+                              <label for="cvv">CVV</label>
+                              <input type="text" id="cvv" name="cvv" placeholder="352">
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                      <label>
+                        <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                      </label>
+                      <input type="submit" value="Continue to checkout" class="btn">
+                    </form>
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of checkout modal -->
       <!-- banner -->
       <div class="container-fluid">
         <div class="row max-height justify-content-center align-items-center">
@@ -147,7 +234,7 @@
               <br />
               Now, we're quite aware that not all dice are created equal - and the adage of "the dice giveth and the dice taketh away" is painfully true...and if you play Dungeons and Dragons, dice can make or break an entire campaign.
             </p>
-            <a href="#footer" class="btn btn-black text-uppercase">learn more</a>
+            <a href="#footer" class="btn btn-black text-uppercase">diplomacy</a>
           </div>
           <div class="col-10 mx-auto col-md-6 my-5 align-self-center">
             <div class="about-img__container">
@@ -335,7 +422,7 @@
                   class="card-text d-flex justify-content-between text-capitalize"
                 >
                   <h5 id="store-item-name">miniature: dwarf</h5>
-                  <h5 class="store-item-value">$ <strong
+                  <h5 class="store-item-value">$<strong
                      id="store-item-price" 
                      class="font-weight-bold">8</strong></h5>
                 </div>
@@ -684,13 +771,13 @@
             <span class="mr-4 icon-black footer-icon">
               <i class="fas fa-map"></i>
             </span>
-            <span>123 street, san diego, CA 9092</span>
+            <span>123 street, Sombor, SRB</span>
           </p>
           <p class="d-flex flex-wrap">
             <span class="mr-4 icon-black footer-icon">
               <i class="fas fa-phone"></i>
             </span>
-            <span>123-456-533</span>
+            <span>+381 68/234-55-0</span>
           </p>
           <p class="d-flex flex-wrap">
             <span class="mr-4 icon-black footer-icon">

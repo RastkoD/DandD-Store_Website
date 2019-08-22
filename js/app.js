@@ -69,8 +69,41 @@
         const total = document.querySelector('.cart-total-container');
 
         cart.insertBefore(cartItem, total);
-        alert('added to cart');
+        showAlert();
         showTotals();
+
+        const clearBtn = document.getElementById('clear-cart');
+        clearBtn.addEventListener('click', function() {
+          document.getElementById('cart-total').textContent = '0.00';
+          document.querySelector('.item-total').textContent = null;
+          document.getElementById('item-count').textContent = 0;
+          const cart = document.getElementById('cart');
+          cart.innerHTML = `
+              <div class="cart-total-container d-flex justify-content-around text-capitalize mt-5">
+                <h5>Total </h5>
+                <h5>$ <strong id="cart-total" class="font-weight-bold">0.00</strong></h5>
+              </div>
+              <!-- end of cart total -->
+              <!-- cart buttons -->
+              <div class="cart-buttons-container mt-3 d-flex justify-content-between">
+                <a id="clear-cart" class="mr-1 btn btn-black text-uppercase">clear cart</a>
+                <a href="#" id="checkout-cart" class="ml-1 btn btn-pink text-uppercase">checkout</a>
+              </div>
+            `;
+        });
+
+        const checkoutBtn = document.getElementById('checkout-cart');
+        checkoutBtn.addEventListener('click', function() {
+          showSignIn();
+        });
+        // checkout modal
+        function showSignIn() {
+          $('#signIn').modal('show');
+
+          setTimeout(function() {
+            $('#signIn').modal('hide');
+          });
+        }
       }
     });
   });
@@ -96,6 +129,15 @@
     document.getElementById('cart-total').textContent = finalMoney;
     document.querySelector('.item-total').textContent = finalMoney;
     document.getElementById('item-count').textContent = total.length;
+  }
+
+  // item addded modal
+  function showAlert() {
+    $('#overlay').modal('show');
+
+    setTimeout(function() {
+      $('#overlay').modal('hide');
+    }, 2000);
   }
 })();
 
