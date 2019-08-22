@@ -8,5 +8,5 @@
  * [x] Footer with links (social, email)
  * [x] JS store Cart
  * [x] Sort items
- * [] Sign In/Register form
+ * [x] Sign In/Register form
  * [] Animate.css + wow.js
