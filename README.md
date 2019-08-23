@@ -10,4 +10,4 @@
  * [x] Sort items
  * [x] Sign In/Register form
  * [x] Animate.css + wow.js
- * [-] Notable deficiency - hamburger menu animation, cart icon on mobile, search btn functionality
+ * [ ] Notable deficiency - hamburger menu animation, cart icon on mobile, search btn functionality
