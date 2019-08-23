@@ -4,10 +4,10 @@
 # What I learned
 
  * [x] Responsive design
- * [x] CSS3 and JS animations and tricks (transition, transform, back to top btn, parallax...)
+ * [x] CSS3 and JS animations and tricks (preloader, transition, transform, back to top btn, parallax...)
  * [x] Footer with links (social, email)
  * [x] JS store Cart
  * [x] Sort items
- * [x] Sign In/Register form
+ * [x] Payment form
  * [x] Animate.css + wow.js
  * [ ] Notable deficiency - hamburger menu animation, cart icon on mobile, search btn functionality
