@@ -1,6 +1,8 @@
 # The General Store - D&D store Website
 #### This is a responsive online shop website with simple animations.
 
+### :rocket: [DEMO](https://thegeneralstore.netlify.com/)
+
 # What I learned
 
  * [x] Responsive design
