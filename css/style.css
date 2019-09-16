@@ -664,6 +664,10 @@ body {
   text-decoration: none;
 }
 
+#brand {
+  font-size: 14px;
+}
+
 /* back to top */
 #myBtn {
   display: none; /* Hidden by default */
