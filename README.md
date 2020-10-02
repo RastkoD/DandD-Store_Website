@@ -13,4 +13,4 @@
  * [x] Payment form
  * [x] Animate.css + wow.js
  * [ ] Notable deficiency - hamburger menu animation, cart icon on mobile, search btn functionality
- * [ ] Pull prods. from API
+ * [ ] Pull prods. from DB
